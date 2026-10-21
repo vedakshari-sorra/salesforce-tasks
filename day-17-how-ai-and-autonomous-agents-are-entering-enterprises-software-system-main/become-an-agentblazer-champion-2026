@@ -1,0 +1,46 @@
+# Day 17 – Agentforce Development
+
+## Topics Covered
+
+This repository contains notes and examples for:
+
+- Become an Agentblazer Champion 2026
+- Agentforce Vibes Extension
+- Build an Agent Using Agentforce DX
+- Agent Customization with Apex
+
+---
+
+## Learning Objectives
+
+By completing this module, you will be able to:
+
+- Understand Agentforce fundamentals
+- Learn Agentblazer Champion concepts
+- Explore Agentforce Vibes Extension
+- Build AI-powered agents using Agentforce DX
+- Customize agent functionality with Apex
+
+---
+
+## Files Included
+
+| File | Description |
+|--------|------------|
+| answers.md | Questions and answers |
+| become-an-agentblazer-champion-2026.md | Agentblazer Champion learning concepts |
+| agentforce-vibes-extension.md | Agentforce Vibes Extension overview |
+| build-an-agent-using-agentforce-dx.md | Agent creation using Agentforce DX |
+| agent-customization-with-apex.md | Extending agents using Apex |
+
+---
+
+## What is Agentforce?
+
+Agentforce is Salesforce's platform for creating intelligent AI agents that automate tasks, assist users, and interact with Salesforce data.
+
+---
+
+## Conclusion
+
+Agentforce enables organizations to build scalable AI-powered solutions directly within the Salesforce ecosystem.
