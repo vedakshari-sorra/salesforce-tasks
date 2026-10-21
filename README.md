@@ -1,73 +1,96 @@
-# day-2-platform-basics# Day 2 - Salesforce Platform Basics
+# Day 3 - Data Modeling in Salesforce
 
-## 1. What is Salesforce Platform?
-
-Salesforce Platform is a cloud-based platform that allows 
-developers and admins to build and customize business 
-applications without always needing to code.
-It uses Objects, Apps, and Tabs to organize data.
-
-
-
-## 2. App, Object and Tab
+## 1. Difference Between App, Object, Record and Field
 
 ### App
-An App is a collection of tabs and tools grouped 
-together for a specific business purpose.
-Example: A "Hospital App" contains Patient, 
-Doctor, and Appointment tabs.
+A collection of tabs and tools for a 
+specific business purpose.
+Example: College Management App
 
 ### Object
-An Object is like a table that stores a specific 
-type of data.
-Example: Patient Object stores name, age, blood group.
+A table that stores specific type of data.
+Example: Student, Course, Department
 
-### Tab
-A Tab is the navigation button in Salesforce that 
-gives users access to an Object.
-Example: Clicking "Patient" tab shows all patient records.
+### Record
+A single row of data inside an object.
+Example: One student's information
 
+### Field
+A column inside an object.
+Example: Student Name, Email, Age
 
+---
 
-## 3. Configuration vs Coding
+## 2. Standard vs Custom Objects
 
-### Configuration (No Code)
-Used for simple tasks without writing code.
-
+### Standard Objects
+Already built inside Salesforce.
 Examples:
-- Creating a new field in an Object
-- Setting up an automatic email alert using Flow
+- Account
+- Contact
+- Opportunity
+- Lead
 
-### Coding (Apex)
-Used for complex logic that configuration cannot handle.
-
+### Custom Objects
+Objects YOU create for your business.
 Examples:
-- Calculating commission for multiple sales reps
-- Connecting Salesforce to an external payment system
+- Student
+- Course
+- Faculty
+- Department
 
+---
 
+## 3. My College Data Model
 
-## 4. My System Design
+### Objects Created:
+- Student
+- Course
+- Faculty
+- Department
 
-**System: Hospital Management App**
+### Relationships:
+- Course → Department (Lookup)
+- Faculty → Department (Lookup)
+- Student → Course (Lookup)
 
-| Part | Details |
-|------|---------|
-| App Name | Hospital Management App |
-| Objects | Patient, Doctor, Appointment, Department |
-| User Interaction | Receptionists book appointments, Doctors view patients, Admins monitor departments |
+### Diagram:
 
+                +------------------+
+                |   Department     |
+                +------------------+
+                | Department Name  |
+                | HOD Name         |
+                +------------------+
+                    ↑          ↑
+                    |          |
+         Lookup     |          | Lookup
+                    |          |
+        +----------------+   +----------------+
+        |    Course      |   |    Faculty     |
+        +----------------+   +----------------+
+        | Course Name    |   | Faculty Name   |
+        | Duration       |   | Subject        |
+        +----------------+   +----------------+
 
+                    ↑
+                    |
+                Lookup
+                    |
+            +----------------+
+            |    Student     |
+            +----------------+
+            | Student Name   |
+            | Email          |
+            | Age            |
+            +----------------+
 
-## 5. Screenshots from trailhead
-"C:\Users\vedak\OneDrive\Documents\salesforce profile.jpeg"
-## 5. Screenshots from Salesforce
+## Screenshots
 
+![Course Object](course.png)
 
+![Department Object](department.png)
 
-![Screenshot 1](IMG-20260513-WA0010.jpeg)
+![Faculty Object](faculty.png)
 
-![Screenshot 2](IMG20260513100238.jpg)
-  
-**Date:** 13 May 2026  
-**Day:** Day 2 - Salesforce Platform Basics
+![Student Object](student.png)
