@@ -1,12 +1,11 @@
-# day-15-enterprise-syatems-are-only-as-good-as-their-data
-# Day 15 – Data Management & Data Quality
+# Day 14 – Salesforce Automation
 
 ## Topics Covered
 
 This repository contains notes and examples for:
 
-- Data Management
-- Data Quality
+- Flow Builder Logic
+- Approval Processes
 
 ---
 
@@ -14,31 +13,38 @@ This repository contains notes and examples for:
 
 By completing this module, you will be able to:
 
-- Understand Salesforce Data Management concepts
-- Learn data import and export processes
-- Understand data governance practices
-- Improve data quality
-- Identify and prevent duplicate records
-- Maintain accurate business data
+- Understand Salesforce Flow Builder
+- Create automation using Flow Logic
+- Learn decision-based workflows
+- Configure Approval Processes
+- Automate record approval and rejection
 
 ---
 
 ## Files Included
 
 | File | Description |
-|------|-------------|
+|--------|------------|
 | answers.md | Questions and answers |
-| data-management.md | Data management concepts and tools |
-| data-quality.md | Data quality principles and best practices |
+| flow-builder-logic.md | Flow Builder concepts and logic |
+| approval-processes.md | Record approval process concepts |
 
 ---
 
-## Importance of Data
+## Overview
 
-Data is one of the most valuable assets in Salesforce. Proper management and quality ensure accurate reporting, automation, and business decisions.
+Salesforce provides powerful automation tools that help organizations automate business processes without extensive coding.
+
+### Flow Builder
+
+Flow Builder allows administrators and developers to automate business processes using clicks instead of code.
+
+### Approval Processes
+
+Approval Processes automate record approval workflows by routing records to designated approvers.
 
 ---
 
 ## Conclusion
 
-Effective data management and high-quality data are essential for maximizing Salesforce performance and business success.
+Flow Builder and Approval Processes help organizations streamline operations, improve efficiency, and reduce manual work.
