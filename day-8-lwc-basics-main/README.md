@@ -1,144 +1,126 @@
-# Day 8 – Lightning Web Components Basics
+# Day 7 – Testing, DX and Professional Workflow
 
 ## Topics Covered
-- Lightning Web Components (LWC)
-- Component-Based Architecture
-- Frontend vs Backend Thinking
-- Reusable UI Design
-- Enterprise UI Development
-- Salesforce Security Basics
+- Importance of Testing
+- Asynchronous Processing
+- Salesforce DX
+- GitHub Workflow
+- CLI Usage
+- System Integration Thinking
+- Enterprise Development Practices
 
 ---
 
-# What is LWC?
+# Why Testing Matters
 
-Lightning Web Components (LWC) is Salesforce’s modern UI framework used to build fast, reusable, and efficient user interfaces.
+Testing ensures that enterprise applications work correctly, securely, and reliably. It helps prevent data corruption, business logic failures, and production issues.
 
-LWC is based on:
-- HTML
-- JavaScript
-- CSS
-- Web Standards
+Without proper testing:
+- Invalid data may enter the system
+- Duplicate records can occur
+- Automation may fail
+- Reports may show incorrect analytics
+- Business operations may break
 
-Each component contains:
-- HTML template
-- JavaScript controller
-- Metadata configuration
-
-LWC helps developers create modular and maintainable applications.
+Testing improves software quality and user trust.
 
 ---
 
-# Why Salesforce Uses LWC
+# What is Asynchronous Apex?
 
-Salesforce moved toward LWC because it:
-- Improves performance
-- Uses modern web standards
-- Supports reusable UI architecture
-- Simplifies development
-- Enhances maintainability
-- Provides better user experience
-
-Compared to older Aura components, LWC is:
-- Faster
-- Lightweight
-- Easier to develop
-- More aligned with modern JavaScript development
-
----
-
-# UI Screens for College Management System
-
-## 1. Student Registration Screen
-Allows students to register and submit details.
-
-## 2. Course Dashboard
-Displays available courses and enrollment details.
-
-## 3. Attendance Management Screen
-Tracks attendance records for students.
-
-## 4. Faculty Panel
-Allows faculty to manage classes and student data.
-
-## 5. Notifications Widget
-Displays announcements and important updates.
-
----
-
-# Component Breakdown
-
-## Selected Screen: Student Dashboard
-
-### Reusable Components
-
-### 1. Header Component
-Displays application title and navigation.
-
-### 2. Student Information Component
-Displays student profile details.
-
-### 3. Attendance Component
-Shows attendance percentage and status.
-
-### 4. Notifications Component
-Displays latest alerts and announcements.
-
-### 5. Course Summary Component
-Displays enrolled courses and progress.
-
----
-
-# Why Reusable Components Are Useful
-
-Reusable components:
-- Reduce duplicate code
-- Improve maintainability
-- Increase development speed
-- Ensure UI consistency
-- Simplify debugging
-- Support scalability in enterprise applications
-
----
-
-# Frontend vs Backend Logic
-
-## Frontend (UI Layer)
-Handles:
-- Button clicks
-- Form input
-- UI rendering
-- Notification display
-- Client-side validation
+Asynchronous Apex allows operations to run in the background instead of making users wait.
 
 Examples:
-- Showing success messages
-- Opening forms
-- User interactions
+- Bulk email sending
+- Large data processing
+- External system synchronization
 
-## Backend (Apex/Server Layer)
-Handles:
-- Database operations
-- Complex business logic
-- Fee calculation
-- Security validation
-- Record processing
+Benefits:
+- Better performance
+- Faster user experience
+- Efficient resource usage
 
-Examples:
-- Saving student records
-- Calculating fees
-- Updating attendance records
+---
+
+# What is Salesforce DX?
+
+Salesforce DX is a modern development approach for Salesforce projects.
+
+It provides:
+- Source-driven development
+- Team collaboration
+- Version control integration
+- Scratch orgs
+- CLI-based deployment
+
+DX improves productivity and makes enterprise development scalable.
+
+---
+
+# Complete System Workflow
+
+## College Management System Workflow
+
+1. Student Registration
+- Student fills registration form.
+
+2. Validation Rules
+- System validates:
+  - Email format
+  - Mandatory fields
+  - Age eligibility
+  - Duplicate entries
+
+3. Flow Automation
+- After successful registration:
+  - Confirmation email sent
+  - Welcome notification generated
+
+4. Trigger Execution
+- Trigger updates:
+  - Course seat count
+  - Student enrollment statistics
+
+5. Formula Fields
+- Remaining seats calculated automatically.
+
+6. Platform Events
+- Notifications sent to:
+  - Faculty
+  - Administration
+  - Student portal
+
+7. Database Storage
+- Records stored securely in Salesforce objects.
+
+8. Reports and Dashboards
+- Analytics generated for:
+  - Admissions
+  - Attendance
+  - Course popularity
+  - Student performance
+
+---
+
+# Important Test Cases
+
+1. Invalid Email Validation
+2. Duplicate Student Registration
+3. Course Overbooking
+4. Attendance Calculation Accuracy
+5. Trigger Execution Validation
+
+Testing prevents system failures and incorrect business operations.
 
 ---
 
 # Reflection
 
-Modern enterprise systems use component-based UI architecture because it:
-- Supports modular development
-- Improves scalability
-- Simplifies maintenance
-- Encourages code reuse
-- Enhances team collaboration
-- Improves application performance
+Enterprise software development requires:
+- Structured workflows
+- Team collaboration
+- Version control
+- Proper testing
+- Automated deployment
 
-Separating frontend and backend logic creates cleaner and more manageable systems.
+GitHub, DX, and CLI help developers work efficiently in large teams while maintaining code quality and deployment reliability.
