@@ -1,0 +1,83 @@
+# Visualforce Basics (Overview)
+
+## Introduction
+
+Visualforce is a framework used to build custom Salesforce pages and user interfaces.
+
+---
+
+## Features
+
+- Tag-based markup language
+- Apex controller integration
+- Custom page development
+- Server-side rendering
+
+---
+
+## Basic Visualforce Page
+
+```html
+<apex:page>
+    <h1>Hello Salesforce</h1>
+</apex:page>
+```
+
+---
+
+## Visualforce with Controller
+
+### Apex Controller
+
+```apex
+public class HelloController {
+
+    public String message {
+        get {
+            return 'Hello Salesforce';
+        }
+    }
+}
+```
+
+### Visualforce Page
+
+```html
+<apex:page controller="HelloController">
+
+    {!message}
+
+</apex:page>
+```
+
+---
+
+## Common Components
+
+```html
+<apex:inputText />
+```
+
+```html
+<apex:commandButton value="Save" />
+```
+
+```html
+<apex:pageBlock title="Account Details">
+</apex:pageBlock>
+```
+
+---
+
+## Advantages
+
+- Easy customization
+- Apex integration
+- Flexible layouts
+- Salesforce security support
+
+---
+
+## Conclusion
+
+Visualforce remains useful for legacy applications and specialized custom pages.

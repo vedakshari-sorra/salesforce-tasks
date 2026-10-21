@@ -1,4 +1,4 @@
-# Day 10 – LWC, Visualforce & Aura Basics
+# Day 11 – LWC, Visualforce & Aura Basics
 
 ## Topics Covered
 
